@@ -35,7 +35,7 @@ def feature(request, slug):
         if form.is_valid():
             subject = 'Feature in Academica'
             message = form.cleaned_data['text']
-            sender = 'info@solvosoft.com'
+            sender = 'sitio@solvosoft.com'
             recipients = ['sitio@solvosoft.com']
             send_mail(subject, message, sender, recipients)
             values['form_success'] = True
